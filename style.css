@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+  display: flex;
+  font-family: "Dosis", sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+}
+
+.wrapper {
+  background: #1f1b1b1b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(155, 164, 169, 0.463);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+  padding: 20px;
+  width: 300px;
+  pointer-events: none;
+}
+
+.screen {
+  background: #eeeceada;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  font-size: 35px;
+  text-align: right;
+}
+
+.buttonrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.calc_button {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: #f7f6f4fc;
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(35, 35, 35, 0.1);
+  color: #232323;
+  flex-basis: 23%;
+  font-family: inherit;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  height: 38px;
+  pointer-events: auto;
+}
+
+.calc_button:last-child {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: #f58535fe;
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(35, 35, 35, 0.1);
+  color: #232323;
+}
+
+.calc_button:last-child:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.calc_button:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.calc_button:active {
+  background-color: #acc733fe;
+}
+
+.two {
+  flex-basis: 48%;
+}
+
+.three {
+  flex-basis: 74%;
+}
